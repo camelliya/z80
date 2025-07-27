@@ -1,7 +1,7 @@
 # Z80 Emulator
 A header-only Z80 cpu emulator.
 
-An example of it in use can be found at my [Pac-Man emulator](https://github.com/encephalalgia/pacman).
+An example of it in use can be found at my [Pac-Man emulator](https://github.com/camelliya/pacman).
 
 ## Usage
 ### Dependencies 
@@ -18,7 +18,7 @@ Using CMake's `FetchContent`, add this to your CMakeLists.txt file:
 include(FetchContent)
 FetchContent_Declare(
 z80
-GIT_REPOSITORY "https://github.com/encephalalgia/z80.git"
+GIT_REPOSITORY "https://github.com/camelliya/z80.git"
 )
 set(TEST_Z80 OFF)
 FetchContent_MakeAvailable(z80)
@@ -34,7 +34,7 @@ Logging can be enabled in [driver.cpp](tests/driver.cpp).
 
 ### With CMake
 ```angular2html
-git clone https://github.com/encephalalgia/z80.git
+git clone https://github.com/camelliya/z80.git
 cd z80/
 cmake -S . -B build -G your_generator -DCMAKE_BUILD_TYPE=RELEASE
 cmake --build build --config Release
